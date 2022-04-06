@@ -1,0 +1,43 @@
+INGRESSOS
+===============================================
+
+- Metodologia: 
+Trello com a metodologia Scrum para gerenciamento do projeto.
+https://trello.com/b/FjWqn6Yj/mb-labs
+ ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png)
+
+- Back-End: 
+API utilizando Nodejs + Express + Mongodb
+
+Modelagem de banco de dados utilizando mongoose
+
+Gerenciando variáveis ambiente utilizando .env
+
+Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js
+
+- Rotas:
+
+POST: http://localhost:7001/user/register
+
+body JSON: {
+	"email":"jacksonmagnabosco@hotmail.com",
+	"password":"teste123"
+}
+
+ ![](https://github.com/jacksonn455/Triider/blob/main/public/images/register-in.png)
+
+POST: http://localhost:7001/user/login
+
+
+body JSON: {
+	"email":"jacksonmagnabosco@hotmail.com",
+	"password":"teste123"
+}
+
+ - Mongo:
+  ![](https://github.com/jacksonn455/Triider/blob/main/public/images/mongo.png)
+
+ | [<img src="https://avatars1.githubusercontent.com/u/46221221?s=460&u=0d161e390cdad66e925f3d52cece6c3e65a23eb2&v=4" width=115><br><sub>@jacksonn455</sub>](https://github.com/jacksonn455) |
+  | :---: |
+
+--------------------
