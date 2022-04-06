@@ -14,11 +14,7 @@ Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dot
 
 *Rotas:* <br>
 POST: http://localhost:7001/user/register <br>
-
-body JSON: { <br>
-	"email":"jacksonmagnabosco@hotmail.com", <br>
-	"password":"teste123" <br>
-} <br>
+body JSON: {"email":"jacksonmagnabosco@hotmail.com", "password":"teste123"} <br>
 
  ![](https://github.com/jacksonn455/Triider/blob/main/public/images/register-in.png)
 
