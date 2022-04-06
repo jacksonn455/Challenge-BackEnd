@@ -7,10 +7,10 @@ https://trello.com/b/FjWqn6Yj/mb-labs
  ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png)
 
 *Back-End:*
-API utilizando Nodejs + Express + Mongodb
-Modelagem de banco de dados utilizando mongoose
-Gerenciando variáveis ambiente utilizando .env
-Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js
+API utilizando Nodejs + Express + Mongodb \n
+Modelagem de banco de dados utilizando mongoose \n
+Gerenciando variáveis ambiente utilizando .env \n
+Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js \n
 
 Rotas:
 
