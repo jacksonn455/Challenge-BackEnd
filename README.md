@@ -6,20 +6,19 @@ Trello com a metodologia Scrum para gerenciamento do projeto.
 https://trello.com/b/FjWqn6Yj/mb-labs
  ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png)
 
-*Back-End:*
+*Back-End:* <br>
 API utilizando Nodejs + Express + Mongodb <br>
 Modelagem de banco de dados utilizando mongoose <br>
 Gerenciando variáveis ambiente utilizando .env <br>
 Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js <br>
 
-Rotas:
+*Rotas:* <br>
+POST: http://localhost:7001/user/register <br>
 
-POST: http://localhost:7001/user/register
-
-body JSON: {
-	"email":"jacksonmagnabosco@hotmail.com",
-	"password":"teste123"
-}
+body JSON: { <br>
+	"email":"jacksonmagnabosco@hotmail.com", <br>
+	"password":"teste123" <br>
+} <br>
 
  ![](https://github.com/jacksonn455/Triider/blob/main/public/images/register-in.png)
 
