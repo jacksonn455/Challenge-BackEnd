@@ -1,10 +1,10 @@
 INGRESSOS
 ===============================================
 
-- Metodologia: 
-Trello com a metodologia Scrum para gerenciamento do projeto.
-https://trello.com/b/FjWqn6Yj/mb-labs
- ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png)
+*Metodologia:* <br>
+Trello com a metodologia Scrum para gerenciamento do projeto. <br>
+https://trello.com/b/FjWqn6Yj/mb-labs <br>
+ ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png) <br>
 
 *Back-End:* <br>
 API utilizando Nodejs + Express + Mongodb <br>
@@ -14,9 +14,8 @@ Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dot
 
 *Rotas:* <br>
 POST: http://localhost:7001/user/register <br>
-body JSON: {"email":"jacksonmagnabosco@hotmail.com", "password":"teste123"} <br>
-
- ![](https://github.com/jacksonn455/Triider/blob/main/public/images/register-in.png)
+body JSON: {"email":"jacksonmagnabosco@hotmail.com", "password":"renner@2022"} <br>
+ ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/jwt%2Bbcrypt.png) <br>
 
 POST: http://localhost:7001/user/login
 
