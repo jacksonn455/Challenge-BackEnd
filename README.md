@@ -13,20 +13,16 @@ Gerenciando variáveis ambiente utilizando .env <br>
 Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js <br>
 
 *Rotas:* <br>
-POST: http://localhost:7001/user/register <br>
+POST: http://localhost:7001/users/create <br>
 body JSON: {"email":"jacksonmagnabosco@hotmail.com", "password":"renner@2022"} <br>
  ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/jwt%2Bbcrypt.png) <br>
 
-POST: http://localhost:7001/user/login
+POST: http://localhost:7001/ <br>
+header: auth: *************** <br>
+![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/jwt.png) <br>
 
-
-body JSON: {
-	"email":"jacksonmagnabosco@hotmail.com",
-	"password":"teste123"
-}
-
- - Mongo:
-  ![](https://github.com/jacksonn455/Triider/blob/main/public/images/mongo.png)
+*Mongo:* <br>
+![](https://github.com/jacksonn455/Triider/blob/main/public/images/mongo.png) <br>
 
  | [<img src="https://avatars1.githubusercontent.com/u/46221221?s=460&u=0d161e390cdad66e925f3d52cece6c3e65a23eb2&v=4" width=115><br><sub>@jacksonn455</sub>](https://github.com/jacksonn455) |
   | :---: |
