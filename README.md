@@ -2,7 +2,7 @@ NodeJS challenge
 ===============================================
 
 *Metodologia:* <br>
-Trello com a metodologia Scrum para gerenciamento do projeto. <br>
+Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 
 *Documentação:*
 - Swagger utilizando a especificação Open API
