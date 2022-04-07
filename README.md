@@ -3,8 +3,7 @@ NodeJS challenge
 
 *Metodologia:* <br>
 Trello com a metodologia Scrum para gerenciamento do projeto. <br>
-https://trello.com/b/FjWqn6Yj/mb-labs <br>
- ![](https://github.com/jacksonn455/Ingressos/blob/master/public/images/trello.png) <br>
+ ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/trello.png) <br>
 
 *Back-End:* <br>
 API utilizando Nodejs + Express + Mongodb <br>
@@ -25,6 +24,9 @@ body JSON: {"email":"jacksonmagnabosco@hotmail.com", "password":"renner@2022"} <
 POST: http://localhost:7001/ <br>
 header: auth: *************** <br>
 ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/jwt.png) <br>
+
+*Configuração de ambiente:* <br>
+![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/ambiente.png) <br>
 
 *Mongo:* <br>
 ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/bcrypt.png) <br>
