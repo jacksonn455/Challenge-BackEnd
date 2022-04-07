@@ -14,6 +14,7 @@ Autenticação utilizando jwt (jsonwebtoken), com data de expiração <br>
 Funções utilizando async / await <br>
 Status code apropriado para cada chamada da API <br>
 Configuração de ambiente DEV, HML, PROD <br>
+Pratica de Clean Code segundo o livro "Código Limpo Habilidades Práticas do Agile Software" <br>
 Para rodar a aplicação utilize o comando: npm install, e depois nodemon -r dotenv/config .\app.js <br>
 
 *Rotas:* <br>
