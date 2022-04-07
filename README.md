@@ -11,7 +11,7 @@ Trello com a metodologia Scrum para gerenciamento do projeto. <br>
 - Gerenciando variáveis ambiente utilizando .env <br>
 - Criptografia utilizando bcrypt <br>
 - Autenticação utilizando jwt (jsonwebtoken), com data de expiração <br>
-- Funções utilizando async / await <br>
+- Funções assíncronas utilizando async / await <br>
 - Status code apropriado para cada chamada da API <br>
 - Configuração de ambiente DEV, HML, PROD <br>
 - Pratica de Clean Code segundo o livro "Código Limpo Habilidades Práticas do Agile Software" <br>
