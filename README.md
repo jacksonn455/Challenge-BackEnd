@@ -3,7 +3,6 @@ NodeJS challenge
 
 *Metodologia:* <br>
 Trello com a metodologia Scrum para gerenciamento do projeto. <br>
- ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/trello.png) <br>
 
 *Back-End:* <br>
 - API utilizando Nodejs + Express + Mongodb <br>
