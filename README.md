@@ -4,6 +4,11 @@ NodeJS challenge
 *Metodologia:* <br>
 Trello com a metodologia Scrum para gerenciamento do projeto. <br>
 
+*Documentação:*
+- Swagger utilizando a especificação Open API
+- Formato de serialização utilizado é o YAML <br>
+
+
 *Back-End:* <br>
 - API utilizando Nodejs + Express + Mongodb <br>
 - Modelagem de banco de dados utilizando mongoose <br>
@@ -33,8 +38,6 @@ header: auth: *************** <br>
 
 *Mongo:* <br>
 ![](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/imagens/bcrypt.png) <br>
-
-*Swagger utilizando a especificação OpenAPI:* <br>
 
 ## Autor
  | [<img src="https://avatars1.githubusercontent.com/u/46221221?s=460&u=0d161e390cdad66e925f3d52cece6c3e65a23eb2&v=4" width=115><br><sub>@jacksonn455</sub>](https://github.com/jacksonn455) |
