@@ -17,7 +17,7 @@ Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 - Gerenciando variáveis ambiente utilizando .env <br>
 - Criptografia utilizando bcrypt <br>
 - Autenticação utilizando jwt (jsonwebtoken), com data de expiração <br>
-- GraphQL como linguagem de consultas de dados da APIs que visa passar a responsabilidade do pedido de dados para o lado do cliente. <br>
+- GraphQL como linguagem de consultas de dados da API que visa passar a responsabilidade do pedido de dados para o lado do cliente. <br>
 - Funções assíncronas utilizando async / await <br>
 - Status code apropriado para cada chamada da API <br>
 - Configuração de ambiente DEV, HML, PROD <br>
