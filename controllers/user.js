@@ -33,3 +33,23 @@ exports.postUser = async (req, res) => {
         return res.status(500).send({ error: 'Erro ao buscar usuário!' });
     }
 };
+
+exports.putUser = async (req, res) => {
+  const { _id } = req.params; 
+  const { email } = req.body 
+
+
+  const userIndex = users.findIndex(user => user._id === _id);
+
+  if(userIndex < 0){
+      return response.status(400).json({ error: 'Erro ao buscar usuário!'});
+  }
+
+  const user = {
+      id,
+      email
+  };
+
+  users[userIndex] = user;
+  return res.json(user);
+};
