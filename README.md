@@ -11,7 +11,8 @@ Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 
 
 *Back-End:* <br>
-- API utilizando Nodejs + Mongodb <br>
+- API utilizando Nodejs + Express + Mongodb <br>
+- Desenvolvimento Orientado à Testes - TDD <br>
 - Modelagem de banco de dados utilizando mongoose <br>
 - Controllers para atualizar os modelos e suas visualizações <br>
 - Gerenciando variáveis ambiente utilizando .env <br>
