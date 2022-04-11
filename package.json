@@ -4,8 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch ./ app.js"
+    "start": "nodemon app.js",
+    "test": "jest",
+    "lint": "eslint src/** test/** --fix",
+    "secure-mode": "jest --watch --verbose=true"
   },
   "author": "Jackson Felipe Magnabosco",
   "license": "ISC",
@@ -13,7 +15,7 @@
     "async": "^3.2.3",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.2",
+    "body-parser": "1.18.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -33,6 +35,11 @@
     "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "23.6.0",
+    "nodemon": "^2.0.7",
+    "supertest": "3.3.0"
   }
 }
