@@ -1,0 +1,390 @@
+---
+openapi: 3.0.0
+info:
+  title: Documentação API Renner
+  description: |
+    <hr> <h2>Modo de Funcionamento</h2> <h3>Descrição</h2> <p>O protocolo da API da Renner foi escrito tomando como base o modelo REST, onde todas as requisições são feitas via HTTP puro e os dados trafegados são estruturados no padrão JSON. Para cada regra de negócio exposta pela API, existe uma URL que a representa.</p> <h3>Tipos de Retorno</h3> <p>Todos os endpoints retornam um objeto JSON.</p>
+  contact:
+    name: Jackson Magnabosco
+    email: jacksonmagnabosco@hotmail.com
+  version: 1.0.0
+servers:
+- url: http://localhost:4000
+security:
+- auth: []
+paths:
+  /users:
+    get:
+      summary: Recuperar todos usuários
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /users/id:
+    get:
+      summary: Recuperar um usuário
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /users/create:
+    post:
+      summary: Criar um novo usuário
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_request'
+        required: true
+      responses:
+        "201":
+          description: Criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /users/update/id:
+    put:
+      summary: Altera o usuário
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_request'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /users/delete/id:
+    delete:
+      summary: Deleta o usuário
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /products:
+    get:
+      summary: Recuperar todos os produtos
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response_products'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /products/id:
+    get:
+      summary: Recuperar um produto
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response_products'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /products/create:
+    post:
+      summary: Criar um novo produto
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_request_products'
+        required: true
+      responses:
+        "201":
+          description: Criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response_products'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /products/update/id:
+    put:
+      summary: Altera um produto
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_request_products'
+        required: true
+      responses:
+        "201":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response_products'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+  /products/delete/id:
+    delete:
+      summary: Deleta um produto
+      parameters:
+      - name: auth
+        in: header
+        description: Token JWT no header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: array
+          items:
+            type: string
+            format: string
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/body_response_products'
+        "400":
+          description: Dados request enviados incorretos
+        "401":
+          description: Token invalido, inexistente ou expirado
+        "500":
+          description: Erro no servidor
+components:
+  schemas:
+    body_response:
+      required:
+      - __v
+      - _id
+      - created
+      - email
+      - token
+      type: object
+      properties:
+        user:
+          type: string
+          example: '{"_id":"624f457199178225089a4ed3","email":"jackson@hotmail.com","created":"2022-04-07T20:11:29.774+0000","__v":0}'
+        token:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGY0NTcxOTkxNzgyMjUwODlhNGVkMyIsImlhdCI6MTY0OTM2MjI4OSwiZXhwIjoxNjQ5OTY3MDg5fQ.xpN9-p4XtlZanC-cAVSMwuryaCRY3EhmgjfI6hBis9s
+    body_response_products:
+      required:
+      - __v
+      - _id
+      - category
+      - description
+      - title
+      - value
+      type: object
+      properties:
+        product:
+          type: string
+          example: '{"_id":"62509f0aefc12d2864a951b5","title":"camiseta algodão rocky anatomy","description":"Sabe aquela sua camiseta preferida que voc&ecirc","category":"Vestuário Masculino/Camiseta","value":129,"__v":0}'
+    body_request:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          minimum: 1
+          type: string
+          format: email
+          example: jacksonmagnabosco@hotmail.com
+        password:
+          minimum: 1
+          type: string
+          format: password
+          example: renner@2022
+    body_request_products:
+      required:
+      - category
+      - description
+      - title
+      - value
+      type: object
+      properties:
+        tile:
+          minimum: 1
+          type: string
+          example: camiseta algodão rocky anatom
+        description:
+          minimum: 1
+          type: string
+          example: Sabe aquela sua camiseta preferida que voc&ecirc
+        category:
+          minimum: 1
+          type: string
+          example: camiseta algodão rocky anatom
+        value:
+          title: numeric
+          example: 129
+  securitySchemes:
+    auth:
+      type: apiKey
+      name: X-API-Key
+      in: header
