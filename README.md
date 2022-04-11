@@ -16,7 +16,7 @@ Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 - Desenvolvimento Orientado à Testes - TDD com Jest <br>
 - Modelagem de banco de dados utilizando mongoose <br>
 - Controllers para atualizar os modelos e suas visualizações <br>
-- Gerenciando variáveis ambiente utilizando .env <br>
+- Gerenciando variáveis de ambiente utilizando .env <br>
 - Criptografia utilizando bcrypt <br>
 - Autenticação utilizando jwt (jsonwebtoken), com data de expiração <br>
 - Funções assíncronas utilizando async / await <br>
