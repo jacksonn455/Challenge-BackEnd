@@ -8,6 +8,7 @@ Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 - Swagger utilizando a especificação Open API
 - Formato de serialização utilizado é o YAML <br>
 - [Documentação Online](https://app.swaggerhub.com/apis/jacksonn455/Documentacao_API/1.0.0)
+- [Documentação Arquivo](https://github.com/jacksonn455/Challenge-BackEnd/blob/main/documentacaoAPI.yaml)
 
 
 *Back-End:* <br>
