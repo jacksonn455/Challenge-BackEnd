@@ -17,6 +17,18 @@ exports.getUser = async (req, res) => {
   }
 };
 
+exports.getUserById = async (req, res) => {
+  users.findOne({ _id: req.params.id }, function (err, doc) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      res.end();
+      return;
+    }
+    res.json(doc);
+    res.end();
+  });
+}
+
 exports.postUser = async (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) return res.status(400).send({ error: 'Dados insuficientes!' });
@@ -34,22 +46,26 @@ exports.postUser = async (req, res) => {
     }
 };
 
-exports.putUser = async (req, res) => {
-  const { _id } = req.params; 
-  const { email } = req.body 
+exports.putUser = async (req, res, next) => {
+  users.findOneAndUpdate({ _id: req.params.id }, req.body, { upsert: true }, function (err, doc) {
+      if (err) {
+          res.status(500).json({ error: err.message });
+          res.end();
+          return;
+      }
+      res.json(req.body);
+      res.end();
+  });
+};
 
-
-  const userIndex = users.findIndex(user => user._id === _id);
-
-  if(userIndex < 0){
-      return response.status(400).json({ error: 'Erro ao buscar usuário!'});
-  }
-
-  const user = {
-      id,
-      email
-  };
-
-  users[userIndex] = user;
-  return res.json(user);
+exports.deleteUser = async (req, res, next) => {
+  users.findOneAndDelete({ _id: req.params.id }, function (err, doc) {
+      if (err) {
+          res.status(500).json({ error: err.message });
+          res.end();
+          return;
+      }
+      res.json(doc);
+      res.end();
+  });
 };
