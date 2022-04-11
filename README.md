@@ -25,7 +25,7 @@ Trello com a metodologia Scrum para gerenciamento ágil do projeto. <br>
 
 *Executar:* <br>
 Para rodar a aplicação utilize o comando: npm install, e depois npm start ou nodemon -r dotenv/config .\app.js <br>
-*Modo seguro:* Para executar no modo seguro com testes npm run secure-mode <br>
+*Modo seguro:* Para executar no modo seguro com testes, npm run secure-mode <br>
 
 ## Autor
  | [<img src="https://avatars1.githubusercontent.com/u/46221221?s=460&u=0d161e390cdad66e925f3d52cece6c3e65a23eb2&v=4" width=115><br><sub>@jacksonn455</sub>](https://github.com/jacksonn455) |
