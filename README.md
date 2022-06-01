@@ -1,4 +1,4 @@
-NodeJS challenge
+API NodeJS + Express + Mongodb + TDD com Jest
 ===============================================
 
 *Metodologia:* <br>
