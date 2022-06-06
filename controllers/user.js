@@ -34,7 +34,7 @@ exports.postUser = async (req, res) => {
     if (!email || !password) return res.status(400).send({ error: 'Dados insuficientes!' });
 
     try {
-        if (await users.findOne({ email })) return res.status(400).send({ error: 'Usuário já registrado!'});
+        if (await users.findOne({ email })) return res.status(400).send({ error: 'Dados divergentes!'});
 
         const user = await users.create(req.body);
         user.password = undefined;
