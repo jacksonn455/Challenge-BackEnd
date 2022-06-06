@@ -1,9 +1,9 @@
 ---
 openapi: 3.0.0
 info:
-  title: Documentação API Renner
+  title: Documentação API
   description: |
-    <hr> <h2>Modo de Funcionamento</h2> <h3>Descrição</h2> <p>O protocolo da API da Renner foi escrito tomando como base o modelo REST, onde todas as requisições são feitas via HTTP puro e os dados trafegados são estruturados no padrão JSON. Para cada regra de negócio exposta pela API, existe uma URL que a representa.</p> <h3>Tipos de Retorno</h3> <p>Todos os endpoints retornam um objeto JSON.</p>
+    <hr> <h2>Modo de Funcionamento</h2> <h3>Descrição</h2> <p>O protocolo da API foi escrito tomando como base o modelo REST, onde todas as requisições são feitas via HTTP puro e os dados trafegados são estruturados no padrão JSON. Para cada regra de negócio exposta pela API, existe uma URL que a representa.</p> <h3>Tipos de Retorno</h3> <p>Todos os endpoints retornam um objeto JSON.</p>
   contact:
     name: Jackson Magnabosco
     email: jacksonmagnabosco@hotmail.com
